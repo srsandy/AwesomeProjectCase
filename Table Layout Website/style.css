@@ -1,0 +1,251 @@
+ *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        /*--  TABLE --*/
+        
+        table { width: 60%; }
+        
+        tbody { background-color: #fff; }
+        
+        thead { background-image: linear-gradient( rgba(225,225,225,0.7),rgba(225,225,225,0.7)), url('https://st.depositphotos.com/1035837/3824/i/950/depositphotos_38243429-stock-photo-light-grey-wood-texture-with.jpg'); }
+        
+        tfoot { background-color: #304153; }
+        
+        /*-- HEADER BAR--*/
+        
+        h1{
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 60px;
+            letter-spacing: 2px;
+            word-spacing: 1px;
+            color: #304153;
+            margin-left: 100px;
+            display: inline;
+        }
+        
+        h3 {
+            font-family: 'Gafata', sans-serif;
+            text-size: 30px;
+            letter-spacing: 1px;
+            word-spacing: 0.5px;
+            color: #304153;
+            margin-left: 100px;
+            display: block;
+        }
+        
+        /*-- NAVIGATION BAR --*/
+
+        .nav { margin-right: 20px; }
+        
+        .op { width: 43%; }
+        
+        .empty { width: 10%; }
+        
+        ul {
+            list-style: none;
+            padding: 10px;
+            margin: 13px 10px 19px 10px;
+            background-color: #304153;
+            border-radius: 5px;
+            width: 49%;
+            letter-spacing: 0.5px;
+        }
+        
+        li {
+            display: inline;
+            font-family: 'Gafata', sans-serif;
+            padding: 9px 20px;
+            text-align: center;
+            font-size: 15px;
+            margin-right: -3px;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: #f3f3f3;
+            transition: text-decoration 0.3s EaseIn;
+        }
+        
+        li a:hover { text-decoration: underline; }
+        
+        .nav-bor { border-right: 1px solid #f3f3f3; }
+        
+        /*--ABOUT SECTION --*/
+        
+        .about-h {
+            font-family: 'Gafata', sans-serif;
+            font-size: 20px;
+            margin: 29px 0px -8px 10%;
+            padding: 5px 0px;
+            background-color: #304153;
+            display: inline-block;
+            color: #f4f4f4;
+            letter-spacing: 1px;
+            word-spacing: 0.5px;
+            width: 68%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .info-1 {
+            margin: 32px 30px 19px 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+        }
+        
+        .info-2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            padding: 13px 5px 0px 0px;
+        }
+        
+        .info-1 b { font-weight: 400; }
+        
+        .ab{ width: 100%; }
+        
+        .about-side-1 {
+            width: 30%;
+            float: left; 
+        }
+        
+        .about-side-2 {
+            width: 70%;
+            float:right;
+            margin: 18px 0px;
+            border-bottom: 2.5px solid #65ceed;
+            border-top: 2.5px solid #65ceed;
+            padding: 20px 0px;    
+        }
+        
+        .about-icon { margin: 0px 30px; }
+        
+        img {
+            float: left;
+            margin-right: 10px;
+            border-right: 4px solid #65ceed;
+        }
+        
+        .fa {
+            font-size: 20px;
+            padding: 5px;
+             box-shadow: 0px 1px 3px #888888;
+        }
+        
+        .fa-facebook-square{ color: #3b5998; }
+        
+        .fa-twitter-square{ color: #00b6f1;  }
+        
+        .fa-google-plus-square{ color: #df4a32 }
+        
+        .fa-rss-square{ color: #f65b8e; }
+        
+        .fa-skype{ color: #00aff0; }
+        
+        /* SKILLS SECTION */
+        
+         .skill-h {
+            font-family: 'Gafata', sans-serif;
+            font-size: 20px;
+            margin: 11px 10% 12px 0px;
+            padding: 5px 0px;
+            background-color: #304153;
+            display: inline-block;
+            color: #f4f4f4;
+            letter-spacing: 1px;
+            word-spacing: 0.5px;
+            width: 80%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            word-spacing: 0.5px;
+        }
+        
+        .ico {
+            width: 20%;
+            background-color: #f4f4f4;
+        }
+        
+        .color-it{ background-color: f4f4f4; }
+        
+        .icon {
+            padding: 0px 60px;
+            margin-top: 20px;
+            font-size: 80px;
+        }
+        
+        h4{
+            text-align: center;
+            font-family: 'Rock Salt', cursive;
+            margin-top: -5px;
+            color: #304153;
+            margin-bottom: 10px;
+        }
+        
+        .ion-social-html5{ color: #e65126; }
+        
+        .ion-social-css3{ color: #41a6e4; }
+        
+        .ion-social-javascript { color: #d9a630; }
+        
+        .ion-social-angular { color: #b33138; }
+       
+        /* EXP & EDU SECTION */
+        
+        .line { line-height: 0.2; }
+        
+        .fil-1 { background-color: #304153; }
+        
+        .fil-2 { background-color: #74d4f0; }
+     
+        .exp-h {
+            font-family: 'Gafata', sans-serif;
+            font-size: 20px;
+            border-radius: 5px;
+            margin: 15px 10% 15px 0px;
+            padding: 5px 0px;
+            background-color: #3599dc;
+            display: inline-block;
+            color: #f4f4f4;
+            letter-spacing: 1px;
+            word-spacing: 0.5px;
+            width: 80%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            word-spacing: 0.5px;
+        }
+        
+        .exp-info {
+            color: #f4f4f4;
+            font-size: 15px;
+            padding: 0px;
+            margin: 0px;
+            text-align: left;
+        }
+        
+        h5 {
+            display: inline-block;
+            width: 13%;
+            background-color: #3599dc;
+            color: #f4f4f4;
+            font-size: 13px;
+            border-radius: 3px;
+            text-align: center;
+            padding: 3px 3px;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        
+        .info-read {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #f4f4f4;
+            font-size: 12px;
+            padding: 5px 7px;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            margin: 5px 5px;
+        }

@@ -1,0 +1,306 @@
+* {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        /*-- Header Section --*/
+        
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url('http://tables4you.net/wp-content/uploads/2016/10/position_3_coffee_table_with_laptop_platform_-view-here.jpg');
+            height: 85vh;
+            background-attachment: fixed;
+            background-position: top;
+            background-size: cover;
+            font-family: 'Raleway', sans-serif;
+            color: #f5f5f5;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding-top: 15%;
+        }
+        
+        h1 b { color: #01bcd4; }
+        
+        h3 {
+            font-family: 'Gafata', sans-serif;
+            text-transform: uppercase;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            text-align: center;
+            padding-top: 1%;
+        }
+        
+        .btn {
+            text-align: center;
+            font-size: 15px;
+            height: 40px;
+            width: 110px;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            background-color: #01bcd4 ;
+            color: #f4f4f4;
+            border: none;
+            box-shadow: -5px 5px 5px #1e1f1f;
+            position: relative;
+            transform: translate(595%, 110%);
+        }
+        
+        .btn:focus { outline-color: #ad3865; }
+        
+        
+        /*-- NAV SECTION --*/
+        nav {
+            width: 100%;
+            height: 7vh;
+            background-color: #fff;
+        }
+        
+        .nav-h {
+            float: left;
+            color: #ad3865;
+            margin-left: 50px;
+            font-size: 25px;
+        }
+        
+        nav ul {
+            float: right;
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0px 10px;
+            padding: 18px 20px 17px 20px;
+            border-bottom: 5px solid trasparent;
+            transition: border-bottom 0.4s;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+             color: #7c7c7c;
+        }
+        
+        nav ul li:hover { border-bottom: 5px solid #01bcd4; }
+        
+        /*-- ABOUT SECTION --*/
+        
+        .about-s { height: 60vh; }
+        h2 {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 600;
+            letter-spacing: 4px;
+        }
+        
+        h2:after {
+            display: block; 
+            font-family: 'FontAwesome';
+            content: '\f00d'; 
+            font-size: 20px;
+            color: #ad3865;
+        }
+        
+        .row {
+            width: 70%;
+            margin: 4% 15%;
+            
+        }
+        
+        .ab {
+            width: 31.26%;
+            display: block;
+            float:left;
+            margin: 1% 0 1% 1.6%;
+            
+          
+
+        }
+        
+        .ab-h1 {
+            font-family: 'Gafata', sans-serif;
+            text-transform: uppercase;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #01bcd4;
+            margin: 25px 5px;
+
+        }
+     
+        .ab-c-2 {
+            background-image: url('https://scontent-sit4-1.cdninstagram.com/t51.2885-15/e35/18382412_256872178112994_2473925227197759488_n.jpg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 60%;
+            width: 30%;
+            border: 1px solid #fff;
+            box-shadow: 1px 4px 5px #1e1f1f; 
+        
+            
+        }
+
+        
+        .ab .info {
+            padding: 0px;
+            margin: 30px 40px 40px 40px;
+            color: #727272;
+        }
+        
+        .social-icon {
+            margin: 0px 0px 20px 35px;
+            font-size: 20px;
+        
+        }
+        
+        .icons {
+            color: #01bcd4;
+            border-radius: 50%;
+            margin-right: 10px;
+            box-shadow: 0px 1px 3px #888888;
+            width: 20px;
+            height: 20px;
+            padding: 7px;
+        }
+        
+        /*-- SKILLS SECTION --*/
+        
+        .skills-s {
+            background-color: #fafafa;
+            height: 65vh;
+        }
+        
+        table {
+            width: 60%;
+            margin-top: 60px; 
+        }
+        
+        table tr td { width: 8.3%; }
+        
+        .fill { background-color: #01bcd4; }
+        
+        .f {
+            font-family: Rock Salt , cursive;
+            font-size: 15px;
+        }
+        
+        /* -- EDUCTION SECTION --*/
+        
+        .edu-s {
+            height: 60vh;
+        }
+        
+        .ab >img {
+            height: 200px;
+            width: 200px;
+            padding-left: 60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           
+        }
+        
+        h4, h5 {
+            text-align: center;
+            font-family: 'Gafata', sans-serif;
+        }
+        
+        .edu-n {
+            background-color: #01bcd4;
+            padding: 5px;
+            margin: 2px;
+        }
+        
+        /*-- TESTIMONIAL SECTION --*/
+        
+        .test-s {
+            background-color: #fafafa;
+            height: 57vh;
+
+        }
+        
+        .row-size {
+            width: 100%;
+        }
+        blockquote {
+            padding: 2px; 
+            font-style: italic; 
+            line-height: 145%; 
+            margin-top: 40px; 
+            position: relative; 
+        }
+        
+         blockquote:before{
+             content: "\201C"; 
+             font-size: 500%; 
+             display: block; 
+             position: absolute; 
+             top: -5px; 
+             left: -3px; 
+        }
+        
+         cite {
+             font-size: 90%; 
+             margin: 25px;
+             display: block;
+        }
+        
+        cite >img {
+            height: 55px; 
+            border-radius: 50%; 
+            margin-right: 10px; 
+            vertical-align: middle; 
+        }
+        
+        .cont-s { height: 45vh; }
+        
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        input[type=text], 
+        input[type=email]
+          {
+            width: 40%; 
+            padding: 7px; 
+            margin-bottom: 10px;
+            border-radius: 3px; 
+            border:1px solid #ccc; 
+            font-size: 15px;
+            color: #ccc;
+        }
+
+        textarea { 
+            height: 100px;
+            width: 46%;
+            border-radius: 3px; 
+            font-size: 20px;
+        }
+        input[type=submit],
+        input[type=reset] {
+            text-align: center;
+            font-size: 15px;
+            height: 30px;
+            width: 90px;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            background-color: #01bcd4 ;
+            color: #f4f4f4;
+            border: none;
+            box-shadow: 1px 1px 3px #1e1f1f;
+            border-radius: 3px;
+        }

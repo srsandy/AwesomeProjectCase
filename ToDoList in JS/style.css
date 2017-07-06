@@ -1,0 +1,251 @@
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            }
+            
+            h2 {
+                text-align: center;
+            }
+
+            
+            #list {
+                border: 1px solid;
+                box-shadow: 1px 1px 2px #ccc;
+                margin: 20px auto;
+                width: 500px;
+        
+                
+            }
+            
+            input[type="text"] {
+                width: 70%;
+                height: 40px;
+                font-size: 20px;
+                margin-right: 18px;
+                margin-left: 21px;
+                padding-left: 20px;
+                border: 0px;
+                border-bottom: 1px solid #bac6c4;
+                box-shadow: 0px 0px 1px #ccc;
+            }
+
+            /* Tick and Cross Button CSS */
+            
+            .true{
+                  background: linear-gradient(to left, #6eb4bd,#0d887c );
+                 color: #f4f4f4;
+               
+            }
+            
+            .false{
+                background: linear-gradient(to right, #ef473a, #cb2d3e);
+                color: #f4f4f4;
+                
+            }
+
+            #opt, #opt-true, #opt-false {
+                
+               
+                padding: 10px;
+                height: 100%;
+                width: 100%;
+                overflow: auto;
+                position: absolute;
+                
+            }
+
+
+            .scr-false-n {
+                left: 500px;
+            }
+            
+            .scr-false-h {
+                animation-name: moveFalse;
+                animation-duration: 1s;
+            }
+            
+            @keyframes moveFalse {
+                25% {
+                    
+                   background: linear-gradient(to bottom,#e29924, #d63c2c );
+                }
+                100% {
+                    left: 0;
+                   
+                    background: linear-gradient(to bottom,#e29924, #d63c2c );
+                }
+            }
+            
+            #opt-true {
+                padding: 20px;
+            }
+            
+            .scr-true-n {
+                left: -500px;
+            }
+            
+            .scr-true-h {
+                animation-name: moveTrue;
+                animation-duration: 1s;
+            }
+            
+            @keyframes moveTrue {
+                25% {
+                     background: linear-gradient(to top,  #135058,#f1f2b5);
+                }
+                100%{
+                    left: 0;
+                     background: linear-gradient(to top, #135058,#f1f2b5);
+                    
+                }
+                
+            }
+            
+            #opt li, #opt-true li, #opt-false li {
+                border: 1px solid;
+                height: 45px;
+                padding: 10px;
+                padding-left: 15px;
+                letter-spacing: 1px;
+                word-spacing: 0.5px;
+                font-size: 20px;
+                text-transform: capitalize;
+                margin: 10px 15px 0 15px;
+                width: 85%;
+                display: inline-block;
+                box-shadow: 1px 1px 1px #ccc;
+            }
+
+
+            /* Buttons Styling */
+
+
+
+            
+            .btn {
+                margin: 30px 10px;
+               
+            }
+            .btn button {
+                position: relative;
+                background: transparent;
+                border-radius: 50%;
+                
+            }
+            
+          
+            
+            .btn button:hover::after {
+                display: block;
+                font-size: 10px;
+                position: absolute;
+                left: 7;
+            }
+            
+            #screen {
+                overflow-y: auto;
+                height: 600px;
+                position: relative;
+            }
+            
+            
+            
+            
+            ul #clr {
+                width: 30px;
+                height: 30px;
+                background: transparent;
+                border: 0px;
+                font-size: 25px;
+                color: #e73827;
+            }
+            
+            
+            
+            #btn{
+                height: 40px;
+                width: 40px;
+                color: #15bacd;
+                border: 3px solid #15bacd;
+                border-bottom: 3px solid #232428;
+                font-size: 20px;  
+                
+
+            }
+            
+            #btn:hover::after {
+                content: 'Add';
+                top: 40px;
+                left: 7;
+            }
+            
+            #btn-clr {
+                height: 40px;
+                width: 40px;
+                color: #e91b24;
+                border: 3px solid #e91b24;
+                border-bottom: 3px solid #232428;
+                font-size: 20px;
+            }
+            
+            #btn-clr:hover::after {
+                content: 'Delete';
+                top: 40px;
+                left: 4;
+            }
+            
+            input[type="text"]:focus, button:focus {
+                outline: none;
+            }
+            
+            .pref {
+                width: 160px;
+                margin: 20px auto -10px auto; 
+            }
+            
+            .pref button {
+                height: 45px;
+                width: 45px;
+                font-size: 20px;
+            }
+            
+            
+            #btn-true {
+                border: 3px solid #4eca2f;
+                border-bottom: 3px solid #98ecc0;
+                color: #4eca2f;
+            }
+            
+            #btn-true:hover::after {
+                content: 'Done';
+                top: 45px;
+                left: 7;
+            }
+            
+            #btn-print {
+                border: 3px solid #025ce2;
+                border-bottom: 3px solid #82baf1;
+                color: #025ce2;
+            }
+            
+             #btn-print:hover::after {
+                content: 'List';
+                top: 45px;
+                left: 11;
+            }
+            
+            #btn-false {
+                border: 3px solid #fd1c04;
+                border-bottom: 3px solid #ec857a;
+                color: #fd1c04;
+            }
+            
+            #btn-false:hover::after {
+                content: 'Undone';
+                top: 45px;
+                left: 2;
+            }
+        

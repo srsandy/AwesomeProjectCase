@@ -1,4 +1,4 @@
-# AwesomeWebsiteCase
+# AwesomeProjectCase
 
 The Case contains some of the best tasks give by CodingBlock Dwarka.
 

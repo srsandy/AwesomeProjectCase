@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+</head>
+<body>
+    <input id="input" type="text">
+    <button id="btn">SendData</button>
+    <form ref='uploadForm'
+          id='uploadForm'
+          action='http://localhost:5000/upload'
+          method='post'
+          encType="multipart/form-data">
+        <input type="file" name="foo" />
+        <input type='submit' value='Upload!' />
+    </form>
+    <div id="output"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="ajaxRequest.js"></script>
+</body>
+</html>

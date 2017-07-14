@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping</title>
+    <style>
+        #screen {
+            border: 1px solid darkcyan;
+
+        }
+
+        .track {
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>S no.</td>
+                <td>name</td>
+                <td>price.</td>
+            </tr>
+        </thead>
+        <tbody id="sc">
+
+
+        </tbody>
+    </table>
+<br>
+    <div id="screen">
+        <h3>Your Cart</h3>
+        <div id="cart">
+
+
+        </div>
+        <div id="ord"></div>
+    </div>
+<br>
+    <div class="track">
+        <h2>Track order</h2>
+        <input type="text" id="inp" placeholder="Order no">
+        <button id="btn">submit</button>
+        <div id="s"></div>
+    </div>
+
+
+
+
+<script
+         src="https://code.jquery.com/jquery-3.2.1.min.js"
+         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>
+<script>
+
+    $(document).ready(function () {
+        show();
+        var cart = [];
+        cartP();
+        function show() {
+            $.get('/show',function (data) {
+                let i =0;
+                data.forEach(function(pro) {
+                    i++;
+                    $('#sc').append(
+                        '<tr>' +
+                            '<td>'+ i + '</td>' +
+                            '<td class="add">'+ pro.name +'</td>'+
+                            '<td>'+ pro.price +'</td>' +
+                        '</tr>'
+                    );
+                });
+
+                $('.add').click(function () {
+
+                    var a = $(this).text();
+                    console.log(a);
+                    var f = 0;
+                    cart.forEach(function (x) {
+                            if(x === a) {
+                                f=1;
+                                console.log('already added');
+                            }
+                        });
+
+                    if(f===0) {
+                        cart.push(a);
+                        localStorage.setItem('cart',JSON.stringify(cart));
+                        cartP();
+                    }
+
+                });
+            });
+
+        };
+
+        function cartP() {
+             cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+                var f =0;
+
+                 $('#cart').html('');
+                 $('#ord').html('');
+
+                 cart.forEach(function (x) {
+                     $('#cart').append('<li>'+x+'</li>');
+                    f =1;
+                 });
+
+                if(f==1) {
+                    $('#cart').append('<button id="clr">clr cart</button>');
+                    $('#cart').append('<button id="pay">pay</button>');
+                }
+
+               else {
+                    $('#cart').append('<h3>is empty</h3>');
+                }
+
+            $('#clr').click(function () {
+                clrIt();
+            });
+
+            $('#pay').click(function () {
+                $.post({
+                    url: '/cart',
+                    data : {cartData :cart},
+                    success: function (data) {
+                        $('#cart').html('');
+                        $('#ord').append('<h2>Your order has been placed! Order Id: '+data.insertId+' </h2>')
+                        cart = [];
+                        localStorage.setItem('cart',JSON.stringify(cart));
+                    }
+
+
+                })
+            })
+
+        }
+
+        function clrIt() {
+            cart = [];
+            localStorage.setItem('cart',JSON.stringify(cart));
+            cartP();
+        }
+
+
+        $('#btn').click(function () {
+
+            val = $('#inp').val();
+            if(val !== '') {
+
+                $.get({
+                    url: '/get?id='+val,
+                    success: function (data) {
+                        $('#s').html('');
+                        if(data.length === 0) {
+                            $('#s').append('<h4> Oder id incorrect. Try Again!</h4>');
+                    }
+                        else {
+
+                            var or = JSON.parse(data[0].orders)['cartData[]'];
+                            $('#s').append('<h4>Your Order</h4>');
+                            or.forEach(function (x) {
+                                $('#s').append('<li>'+x+'</li>');
+                            });
+
+                            }
+
+
+                        }
+
+
+
+
+
+
+
+
+
+                });
+            }
+        });
+
+
+
+
+
+
+
+
+
+    });
+
+
+
+</script>
+</body>
+</html>
